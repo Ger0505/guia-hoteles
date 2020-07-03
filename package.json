@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Proyecto de Bootstrap 4",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ger0505/guia-hoteles.git"
+  },
+  "author": "Gerardo Acevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ger0505/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/Ger0505/guia-hoteles#readme"
+}
