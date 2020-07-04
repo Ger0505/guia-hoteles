@@ -7,12 +7,130 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+      <div class="jumbotron">
+          <h1>Hoteles</h1>
+      </div>
+      <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿C&oacute;mo Funciona?</h3>
+                    <p>Busca los hoteles de acuerdo a tu preferencia</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿D&oacute;nde puedo reservar?</h3>
+                    <p>Elegi la ciudad que te interese y luego realiza la reserva con tus datos</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿Cómo pago?</h3>
+                    <p>Utiliza tu tarjeta favorita</p>
+                </p>
+            </div>
+        </div>
+        <!--
+            d-flex flex wrap = para que ponga en filas en la misma fila
+            flex-row-reverse = poner los elementos desde la derecha
+        -->
+        <div class="d-flex flex-wrap flex-row-reverse">
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Cuernos Fr&iacute;os</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Cuernos Fr&iacute;os</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Río de Janeiro</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Buenos Aires</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Ciudad de México</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Caracas</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h2>Hotel Santiago</h2>
+                    <p>Un lugar para dormir Agust&iacute;n de Iturbide</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instragram.com">Instragram</a>
+                <a href="http://www.google.com">Google</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    La Glorieta, Cd. de México, México
+                    +539531243578
+                    no-reply@redbicicletas.com
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nosotros</a>
+                <a href="http://www.twitter.com">Precios</a>
+                <a href="http://www.instragram.com">Términos y Condiciones</a>
+                <a href="http://www.google.com">Contactos</a>
+            </div>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
