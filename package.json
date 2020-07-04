@@ -4,6 +4,7 @@
   "description": "Proyecto de Bootstrap 4",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Ger0505/guia-hoteles/issues"
   },
-  "homepage": "https://github.com/Ger0505/guia-hoteles#readme"
+  "homepage": "https://github.com/Ger0505/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
 }
