@@ -49,24 +49,44 @@
             </ol>
         </nav>
         <img src="img/banner.jpg" alt="banner" class="img-fluid"/>
-        <div class="row">
+        <div class="row mt-1">
+            <div class="col-sm-4 text-center"><a class="btn btn-info" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">¿Cómo funciona?</a>
+            </div>
+            <div class="col-sm-4 text-center"><button class="btn btn-info" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">¿Dondé puedo reservar?</button>
+            </div>
+            <div class="col-sm-4 text-center"><button class="btn btn-info" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">¿Cómo pago?</button>
+            </div>
+        </div>
+          <div class="row">
             <div class="col-sm-4">
-                <p>
-                    <h3>¿C&oacute;mo Funciona?</h3>
-                    <p>Busca los hoteles de acuerdo a tu preferencia</p>
-                </p>
+                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card-body text-center">
+                        <p>
+                            <h3>¿C&oacute;mo Funciona?</h3>
+                            <p>Busca los hoteles de acuerdo a tu preferencia</p>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-                <p>
-                    <h3>¿D&oacute;nde puedo reservar?</h3>
-                    <p>Elegi la ciudad que te interese y luego realiza la reserva con tus datos</p>
-                </p>
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card-body">
+                        <p>
+                            <h3>¿D&oacute;nde puedo reservar?</h3>
+                            <p>Elegi la ciudad que te interese y luego realiza la reserva con tus datos</p>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-                <p>
-                    <h3>¿Cómo pago?</h3>
-                    <p>Utiliza tu tarjeta favorita</p>
-                </p>
+                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card-body text-center">
+                        <p>
+                            <h3>¿Cómo pago?</h3>
+                            <p>Utiliza tu tarjeta favorita</p>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!--
