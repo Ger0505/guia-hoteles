@@ -97,7 +97,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel1.jpg" alt="hotel1" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Ciudad de México</h5>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Viva México!">Hotel Ciudad de México</h5>
                     <h6 class="card-subtitle text-muted">México</h6>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat magna at libero efficitur porttitor.
                         Proin non purus sed eros rhoncus auctor. </p>
@@ -109,7 +109,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel2.jpg" alt="hotel2" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Carnaval de Brasil">Hotel Rio de Janeiro</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text"> Praesent convallis tincidunt quam et ultrices.</p>
                 </div>
@@ -120,7 +120,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel3.jpg" alt="hotel3" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Valaparaíso</h5>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Del que pica...">Hotel Valaparaíso</h5>
                     <h6 class="card-subtitle text-muted">Chile</h6>
                     <p class="card-text">Vivamus placerat erat sit amet enim congue, vitae pellentesque nisl congue.
                         Mauris vel mauris at libero condimentum cursus at id tortor.</p>
@@ -132,7 +132,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel1.jpg" alt="hotel1" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Bogotá</h5>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Café de calidad">Hotel Bogotá</h5>
                     <h6 class="card-subtitle text-muted">Colombia</h6>
                     <p class="card-text">Un lugar donde puedes dormia bien, sin ninguna interrupción</p>
                 </div>
@@ -143,7 +143,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel2.jpg" alt="hotel2" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel San Salvador</h5>
+                    <h5 class="card-title data-toggle="popover" title="Frase" data-content="Cristobal Colón estuvo aquí"">Hotel San Salvador</h5>
                     <h6 class="card-subtitle text-muted">Salvador</h6>
                     <p class="card-text">Maecenas vitae augue quis neque tempus posuere at quis urna.Donec pretium pharetra elit at consequat.
                         Pellentesque dignissim erat non facilisis iaculis. In ullamcorper auctor lectus a cursus.</p>
@@ -155,8 +155,8 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel3.jpg" alt="hotel3" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Caracas</h5>
-                    <h6 class="card-subtitle text-muted">Venezuela</h6>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="What's up?">Hotel New York</h5>
+                    <h6 class="card-subtitle text-muted">Estados Unidos</h6>
                     <p class="card-text">Suspendisse at sagittis ligula, a auctor sapien. Vestibulum sollicitudin, erat ac tristique luctus,
                         velit dui tristique urna, ut tincidunt nulla justo eget est. Cras imperdiet ultricies erat, sed porttitor eros aliquet
                         nec. Vestibulum non pulvinar dolor, eu pulvinar libero. Praesent sagittis tincidunt velit, ac blandit lectus
@@ -169,8 +169,12 @@
             <div class="card card-hotel d-flex flex-column justify-content-between">
                 <img src="img/hotel1.jpg" alt="hotel1" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Toronto</h5>
+                    <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Mmmmm.. Miel de maple">Hotel Toronto</h5>
                     <h6 class="card-subtitle text-muted">Canadá</h6>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
+                    data-toggle="tooltip" data-placement="right" title="Envianos un Correo">
+                        <span class="oi oi-phone"></span>
+                    </button>
                     <p class="card-text">Pellentesque lacinia molestie tellus. Donec vitae elit tincidunt, volutpat velit non.</p>
                 </div>
                 <div>
@@ -203,10 +207,49 @@
             </div>
         </div>
     </footer>
+
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cont&aacute;ctanos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">Correo Electrónico:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="message" class="col-form-label">Comentarios:</label>
+                  <textarea class="form-control" id="message"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+    </div>      
+    <!--/Modal-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
   </body>
 </html>
