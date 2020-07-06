@@ -48,77 +48,119 @@
           </ol>
       </nav>
       <h1>Precios</h1>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead class="thead-dark">
-            <th>Calidad</th>
-            <th>Pinamar</th>
-            <th>VidaParaiso</th>
-            <th>Mar de Plata</th>
-            <th>San Clemente</th>
-            <th>Monterrey</th>
-            <th>Quitana Roo</th>
-            <th>Kentuky</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$100</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$100</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$100</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-                <span class="oi oi-star"></span>
-              </td>
-              <td>$100</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-              <td>$120</td>
-              <td>$150</td>
-              <td>$180</td>
-            </tr>
-          </tbody>
-        </table> 
-      </div> 
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="home" aria-selected="true">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#modos" role="tab" aria-controls="profile" aria-selected="false">Modos de Pago</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#detalles" role="tab" aria-controls="contact" aria-selected="false">Detalles</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="home-tab">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <th>Calidad</th>
+                <th>Pinamar</th>
+                <th>VidaParaiso</th>
+                <th>Mar de Plata</th>
+                <th>San Clemente</th>
+                <th>Monterrey</th>
+                <th>Quitana Roo</th>
+                <th>Kentuky</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$100</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$100</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$100</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                    <span class="oi oi-star"></span>
+                  </td>
+                  <td>$100</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$180</td>
+                </tr>
+              </tbody>
+            </table> 
+          </div> 
+        </div>
+        <div class="tab-pane fade" id="modos" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Efectivo</li>
+              <li class="list-group-item">Tarjeta de Credito</li>
+              <li class="list-group-item">Bitcoins</li>
+              <li class="list-group-item">Cupones</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="detalles" role="tabpanel" aria-labelledby="contact-tab">
+          <p>
+            Sed nisl metus, ultrices a facilisis sed, suscipit vel enim. Donec eu nibh sed nisl vehicula ultrices.
+            Proin varius nunc vel metus pellentesque placerat. Cras scelerisque efficitur iaculis. Ut lobortis velit non nibh 
+            commodo lacinia. Nulla a gravida eros. Nulla orci dui, eleifend vitae sagittis sed, vehicula viverra quam. Aenean
+            aliquam lectus at vestibulum laoreet. Aenean at leo egestas, lobortis lacus nec, maximus elit. Interdum et malesuada
+            fames ac ante ipsum primis in faucibus. Cras et maximus ante. Praesent blandit sollicitudin posuere. Ut sed odio
+            tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis finibus nulla. Ut blandit eu dolor sit 
+            amet luctus. Donec molestie mi faucibus eleifend suscipit. Sed eu vehicula felis. Sed id mattis velit. Aenean
+            hendrerit commodo euismod. Maecenas finibus neque sed dui sollicitudin, quis interdum lacus hendrerit. Sed euismod 
+            sed mi eu consequat. Vestibulum sagittis ultricies ligula, quis tristique elit egestas eu. Praesent elit ipsum,
+            semper id bibendum at, finibus quis tortor. Aliquam erat volutpat. 
+          </p>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="row">
