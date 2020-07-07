@@ -1,0 +1,35 @@
+@amarillo: #ffe121;
+
+.margenes(@top: 0px,@bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+.jumbotron{
+    background-color: @amarillo;
+    color: black;
+    .margenes(55px,0px);
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: @amarillo;
+    .margenes(10px, 0px);
+}
+
+.iconos{
+    margin-right: 10px;
+}
+
+.card-hotel{
+    flex: 1 230px;
+    padding: 2px 5px 2px 5px;
+    .margenes(8px, 0px);
+    margin-left: 10px;
+}
+
+.btn-reserva{
+    width: 100%;
+}
+
+// npx lessc css/styles2.less css/styles2.css
