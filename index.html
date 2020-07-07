@@ -192,7 +192,7 @@
                 <div class="card-body">
                     <h5 class="card-title" data-toggle="popover" title="Frase" data-content="Mmmmm.. Miel de maple">Hotel Toronto</h5>
                     <h6 class="card-subtitle text-muted">Canadá</h6>
-                    <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
+                    <button class="btn btn-success" data-toggle="modal" data-target="#contacto" id="btnContacto"
                     data-toggle="tooltip" data-placement="right" title="Envianos un Correo">
                         <span class="oi oi-phone"></span>
                     </button>
@@ -231,7 +231,7 @@
 
 
     <!--Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -272,6 +272,17 @@
             $('[data-toggle="popover"]').popover();
             $(".carousel").carousel({
                 interval:2000
+            });
+
+            $('#contacto').on('show.bs.modal',function(e){
+              $('#btnContacto').prop("disabled",true);
+              $('#btnContacto').removeClass("btn-success")
+              $('#btnContacto').addClass("btn-secondary");
+            });
+            $('#contacto').on('hidden.bs.modal',function(e){
+              $('#btnContacto').prop("disabled",false);
+              $('#btnContacto').removeClass("btn-secondary");
+              $('#btnContacto').addClass("btn-success")
             });
         });
     </script>
